@@ -27,7 +27,7 @@ export class CarsController extends ResponseHelper {
     }
   };
 
-  create = async (req: Request, res: Response) => {
+  createCar = async (req: Request, res: Response) => {
     try {
       const gambar = await uploadImageToCloudinary(req.file, "cars");
       const id = randomUUID();
@@ -72,7 +72,7 @@ export class CarsController extends ResponseHelper {
     }
   };
 
-  update = async (req: Request, res: Response) => {
+  updateCar = async (req: Request, res: Response) => {
     try {
       const id: string = req.params.id;
       const carById = await CarsModel.query().findById(id);

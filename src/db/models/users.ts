@@ -1,14 +1,11 @@
 import { Model, ModelObject } from "objection";
 
-export class UsersModel extends Model {
-  id!: number;
+export class UserModel extends Model {
   fullname!: string;
   email!: string;
   phone!: string;
   address!: string;
-  role!: string;
-  createdAt!: Date;
-  updatedAt!: Date;
+  role?: string;
 
   static get tableName() {
     return "users";
@@ -28,4 +25,4 @@ export class UsersModel extends Model {
   }
 }
 
-export type Users = ModelObject<UsersModel>;
+export type Users = ModelObject<UserModel>;

@@ -1,9 +1,8 @@
 import { Model, ModelObject, RelationMappings } from "objection";
-import { UsersModel } from "./users";
+import { UserModel } from "./users";
 import { CarsModel } from "./cars";
 
 export class RentModel extends Model {
-  id!: number;
   start_date!: Date;
   end_date!: Date;
   total_price!: number;
@@ -21,7 +20,7 @@ export class RentModel extends Model {
     return {
       user: {
         relation: Model.BelongsToOneRelation,
-        modelClass: UsersModel,
+        modelClass: UserModel,
         join: {
           from: "rent.user_id",
           to: "users.id",
