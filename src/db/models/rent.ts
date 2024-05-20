@@ -9,8 +9,6 @@ export class RentModel extends Model {
   status!: string;
   user_id!: number;
   car_id!: string;
-  created_at!: Date;
-  updated_at!: Date;
 
   static get tableName() {
     return "rent";
