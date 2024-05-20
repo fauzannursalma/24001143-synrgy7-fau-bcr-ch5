@@ -3,3 +3,4 @@
 
 ## ERD Diagram
 https://dbdiagram.io/d/binar-car-rental-664112729e85a46d55a2eaa6
+![image](https://github.com/fauzannursalma/24001143-synrgy7-fau-bcr-ch5/assets/55134999/d4ba4f7b-2581-4c4a-97b8-da4aa77fa75b)
